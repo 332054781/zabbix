@@ -1,9 +1,3 @@
-#########################################################################
-# File Name: php-fpm_status.sh
-# Author: kerncai
-# mail: kernkerncai@gmail.com
-# Created Time: 2013年11月13日 星期三 14时02分35秒
-#########################################################################
 #!/bin/bash
 idle(){
         wget --quiet -O - http://127.0.0.1:40080/php-fpm_status?auto |grep "idle processes" |awk '{print$3}'
