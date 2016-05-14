@@ -4,25 +4,23 @@
     <date>2013-11-13T06:24:34Z</date>
     <groups>
         <group>
-            <name>app</name>
-        </group>
-        <group>
             <name>Templates</name>
         </group>
     </groups>
     <templates>
         <template>
-            <template>nginx_status</template>
-            <name>nginx_status</name>
+            <template>Template nginx_status</template>
+            <name>Template nginx_status</name>
             <groups>
-                <group>
-                    <name>app</name>
-                </group>
                 <group>
                     <name>Templates</name>
                 </group>
             </groups>
-            <applications/>
+           <applications>
+                <application>
+                    <name>nginx_status</name>
+                </application>
+            </applications>
             <items>
                 <item>
                     <name>Active_connections</name>
@@ -30,10 +28,10 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>Active</key>
+                    <key>nginx.connections.active</key>
                     <delay>60</delay>
-                    <history>7</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -65,10 +63,10 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>Reading</key>
+                    <key>nginx.connections.reading</key>
                     <delay>60</delay>
-                    <history>7</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -100,10 +98,10 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>Waiting</key>
+                    <key>nginx.connections.waiting</key>
                     <delay>60</delay>
-                    <history>7</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -135,10 +133,115 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>Writing</key>
+                    <key>nginx.connections.writing</key>
                     <delay>60</delay>
-                    <history>7</history>
-                    <trends>365</trends>
+                    <history>30</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications/>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Accepts</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>nginx.accepts</key>
+                    <delay>60</delay>
+                    <history>30</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications/>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Handled</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>nginx.handled</key>
+                    <delay>60</delay>
+                    <history>30</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications/>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Requests</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>nginx.requests</key>
+                    <delay>60</delay>
+                    <history>30</history>
+                    <trends>90</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
@@ -198,8 +301,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>nginx_status</host>
-                        <key>Active</key>
+                        <host>Template nginx_status</host>
+                        <key>nginx.connections.active</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -210,8 +313,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>nginx_status</host>
-                        <key>Reading</key>
+                        <host>Template nginx_status</host>
+                        <key>nginx.connections.reading</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -222,8 +325,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>nginx_status</host>
-                        <key>Waiting</key>
+                        <host>Template nginx_status</host>
+                        <key>nginx.connections.waiting</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -234,8 +337,44 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>nginx_status</host>
-                        <key>Writing</key>
+                        <host>Template nginx_status</host>
+                        <key>nginx.connections.writing</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>00EE00</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template nginx_status</host>
+                        <key>nginx.accepts</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>EE0000</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template nginx_status</host>
+                        <key>nginx.handled</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>6</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>EEEE00</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template nginx_status</host>
+                        <key>nginx.requests</key>
                     </item>
                 </graph_item>
             </graph_items>

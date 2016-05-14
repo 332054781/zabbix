@@ -1,4 +1,7 @@
-UserParameter=Active,/usr/local/zabbix-agent-ops/bin/nginx_status.sh Active
-UserParameter=Reading,/usr/local/zabbix-agent-ops/bin/nginx_status.sh Reading
-UserParameter=Writing,/usr/local/zabbix-agent-ops/bin/nginx_status.sh Writing
-UserParameter=Waiting,/usr/local/zabbix-agent-ops/bin/nginx_status.sh Waiting
+UserParameter=nginx.connections.active,/usr/local/zabbix/scripts/nginx_status.sh Active
+UserParameter=nginx.connections.reading,/usr/local/zabbix/scripts/nginx_status.sh Reading
+UserParameter=nginx.connections.writing,/usr/local/zabbix/scripts/nginx_status.sh Writing
+UserParameter=nginx.connections.waiting,/usr/local/zabbix/scripts/nginx_status.sh Waiting
+UserParameter=nginx.accepts,/usr/local/zabbix/scripts/nginx_status.sh Accepts
+UserParameter=nginx.handled,/usr/local/zabbix/scripts/nginx_status.sh Handled
+UserParameter=nginx.requests,/usr/local/zabbix/scripts/nginx_status.sh Requests
