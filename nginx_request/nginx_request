@@ -1,0 +1,8 @@
+UserParameter=nginx.request.request,/usr/local/zabbix/scripts/ttlsa-rt-status.sh REQUEST
+UserParameter=nginx.request.recv,/usr/local/zabbix/scripts/ttlsa-rt-status.sh RECV
+UserParameter=nginx.request.sent,/usr/local/zabbix/scripts/ttlsa-rt-status.sh SENT
+UserParameter=nginx.request.upstream,/usr/local/zabbix/scripts/ttlsa-rt-status.sh UPSTREAM
+UserParameter=nginx.request.2xx,/usr/local/zabbix/scripts/ttlsa-rt-status.sh 2XX
+UserParameter=nginx.request.3xx,/usr/local/zabbix/scripts/ttlsa-rt-status.sh 3XX
+UserParameter=nginx.request.4xx,/usr/local/zabbix/scripts/ttlsa-rt-status.sh 4XX
+UserParameter=nginx.request.5xx,/usr/local/zabbix/scripts/ttlsa-rt-status.sh 5XX
